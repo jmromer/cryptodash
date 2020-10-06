@@ -3,14 +3,14 @@ import './App.css';
 import AppLayout from './AppLayout';
 import { AppProvider } from './AppProvider';
 import AppBar from './AppBar';
-import WelcomeMessage from '../Settings/WelcomeMessage';
+import Settings from '../Settings';
 
 function App () {
   return (
     <AppProvider>
       <AppLayout>
         <AppBar />
-        <WelcomeMessage />
+        <Settings />
       </AppLayout>
     </AppProvider>
   );

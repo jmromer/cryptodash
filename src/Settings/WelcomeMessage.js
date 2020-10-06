@@ -1,5 +1,17 @@
 import React from 'react';
 
-export default function WelcomeMessage (props) {
-  return <h1>Welcome to CryptoDash</h1>;
+import { AppContext } from '../App/AppProvider';
+
+export default function WelcomeMessage () {
+  return (
+    <AppContext.Consumer>
+      {({ firstVisit }) =>
+        !firstVisit ? null : (
+          <div>
+            Welcome to CryptoDash, please select your favorite coin to begin.
+          </div>
+        )
+      }
+    </AppContext.Consumer>
+  );
 }
