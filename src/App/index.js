@@ -1,8 +1,11 @@
-import React from 'react';
 import './App.css';
-import AppLayout from './AppLayout';
+
+import React from 'react';
+
 import { AppProvider } from './AppProvider';
 import AppBar from './AppBar';
+import AppLayout from './AppLayout';
+import Content from '../Shared/Content';
 import Settings from '../Settings';
 
 function App () {
@@ -10,7 +13,9 @@ function App () {
     <AppProvider>
       <AppLayout>
         <AppBar />
-        <Settings />
+        <Content>
+          <Settings />
+        </Content>
       </AppLayout>
     </AppProvider>
   );
