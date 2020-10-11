@@ -14,7 +14,7 @@ export default function () {
       {({ coinList }) => (
         <CoinGridStyled>
           {Object.keys(coinList).map(coin => (
-            <div>{coin}</div>
+            <div key={coin}>{coin}</div>
           ))}
         </CoinGridStyled>
       )}
