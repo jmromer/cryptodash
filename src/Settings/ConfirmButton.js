@@ -11,9 +11,9 @@ const ConfirmButtonStyled = styled.div`
   padding: 5px;
   text-align: center;
   width: 100%;
-  ${fontSize1}
+  ${fontSize1};
   &:hover {
-    ${greenBoxShadow}
+    ${greenBoxShadow};
   }
 `;
 
